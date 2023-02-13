@@ -46,6 +46,8 @@ function renderLicenseSection(license) { }
 function generateMarkdown(data) {
   return `# ${data.title}
 # ${renderLicenseBadge(data.markdownLicense)}
+# ${renderLicenseLink(data.markdownLicense)}
+# ${renderLicenseSection(data.markdownLicense)}
   `;
 }
 

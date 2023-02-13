@@ -13,7 +13,7 @@ const questions = [{
 },
 {
     type: 'list',
-    choices: ['MIT', 'Adobe', 'none'], //ADD MORE LICENSE TYPES!  
+    choices: ['MIT', 'Apache', 'GPLv3'], //ADD MORE LICENSE TYPES!  
     message: 'What is the Markdown License for your project?',
     name: 'markdownLicense',
 },

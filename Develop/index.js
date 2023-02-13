@@ -1,42 +1,73 @@
-// THIS FILE is where the questions would be asked, and will create the entire string of answers
+// This is the initial file of the project where the questions would be asked, and will create the entire string of answers
 
-// Pckages needed for this application
+// These are the packages needed for this application
 const inquirer = require('inquirer'); // It knows what it's called from the package.json file
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// An array of questions for user input
+// This is an array of questions for user input. Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 const questions = [{
-    type: 'input', // LOOK AT PROMPT TYPES IN INQUIRER SITE
-    message: 'What is the title of your Read Me?',
+    type: 'input',
+    message: 'Enter the title of your project',
     name: 'title',
 },
 {
+    type: 'input',
+    message: 'Enter the description of your project',
+    name: 'description',
+},
+{
+    type: 'input',
+    message: 'Enter the installation instructions for your project',
+    name: 'installation',
+},
+{
+    type: 'input',
+    message: 'Enter information on how users use your project',
+    name: 'usage',
+},
+{
     type: 'list',
-    choices: ['MIT', 'Apache', 'GPLv3'], //ADD MORE LICENSE TYPES!  
-    message: 'What is the Markdown License for your project?',
+    choices: ['MIT', 'Apache', 'GPLv3', 'none'],
+    message: 'Select the Markdown License for your project',
     name: 'markdownLicense',
 },
-
-    // Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+{
+    type: 'input',
+    message: 'Enter who contributed to your project',
+    name: 'contributors',
+},
+{
+    type: 'input',
+    message: ['Enter any tests for this project'],
+    name: 'test',
+},
+{
+    type: 'input',
+    message: ['Enter your GitHub username'],
+    name: 'githubUsername',
+},
+{
+    type: 'input',
+    message: ['Enter your email address'],
+    name: 'emailAddress',
+},
 ];
 
-// A function to write README file - THEN CALL THIS FUNCTION TO CREATE A README FILE
+//This function writes a new README file 
 function writeToFile(fileName, data) {
     fs.writeFileSync(fileName, data, err => { // If you want to include variables, you need to use back ticks `` for the string, and the ${} so it can dynamically pull data 
         if (err) {
             console.error(err);
         }
+        // return ()
     });
 }
 
 function init() {
     inquirer
-        .prompt(questions) //Prompt is a method inside inquirer
-        .then((response) => {// PASS GO GENERATE MARKDOWN THEN IN GM YOU CAN USE THIS OBJECT TO GET ALL THE DATA YOU NEED
-            // response.confirm === response.password
-            //     ? console.log('Success!')
-            //     : console.log('You forgot your password already?!')
+        .prompt(questions)
+        .then((response) => {
             writeToFile('README.md', generateMarkdown(response));
         });
 }

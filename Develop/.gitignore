@@ -1,2 +1,3 @@
 node_modules
+.DS_Store/
 # if other files need to be added, add  them on separate lines

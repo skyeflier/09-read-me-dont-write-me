@@ -1,42 +1,39 @@
-# e License Badge: ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# Read Me Don't Write Me 
           
-          ## Description: 
-          e
+  Description: 
+  This Read Me generator was created to streamline creading read me files for coding projects and ensure they have consistent, professional formatting. I learned how to use inquirer and work in nodejs. 
+
   ## Table of Contents
-  * [Title](##-e)
 
-  * [Description](##-description)
+  * [Installation Instructions](#-installation)
 
-  * [Installation Instructions](##-installation)
+  * [Usage Information](#-usage)
 
-  * [Usage Information](##-usage)
+  * [License](#-license)
 
-  * [License](##-license)
+  * [Contributors](#-contributors)
 
-  * [Contributors](##-contributors)
+  * [Test Information](#-tests)
 
-  * [Test Information](##-tests)
-
-  * [Questions](##-questions)
+  * [Questions](#-questions)
           
   ## Installation: 
-  e
+  To install this app, simply pull the code from my repository on GitHub, and install npm (use: npm install). Then to initiate the questions, type: node indexjs
           
   ## Usage: 
-  e
+  Use this project to generate a read me file. When you have completed answering the questions, a new read me file will be created, and you can copy that file to your new project. 
           
   ## Contributors: 
-  e
+  Bailey Reiners
 
   ## Tests: 
-  e
+  
 
   ## License:
-  License Link: This application is covered by the MIT license. For more information on this license, click this link: https://opensource.org/licenses/MIT
+  
          
   ## Questions:
-  Find me on GitHub here: https://github.com/e
+  Find me on GitHub here: https://github.com/skyeflier
 
-  Contact me via email here: e
-
+  Contact me via email here: baileyreiners26@gmail.com
   

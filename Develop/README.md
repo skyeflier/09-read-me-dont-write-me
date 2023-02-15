@@ -5,17 +5,17 @@
 
   ## Table of Contents
 
-  * [Installation Instructions](#-installation)
+  * [Installation Instructions](#installation)
 
-  * [Usage Information](#-usage)
+  * [Usage Information](#usage)
 
-  * [License](#-license)
+  * [License](#license)
 
-  * [Contributors](#-contributors)
+  * [Contributors](#contributors)
 
-  * [Test Information](#-tests)
+  * [Test Information](#tests)
 
-  * [Questions](#-questions)
+  * [Questions](#questions)
           
   ## Installation: 
   To install this app, simply pull the code from my repository on GitHub, and install npm (use: npm install). Then to initiate the questions, type: node indexjs

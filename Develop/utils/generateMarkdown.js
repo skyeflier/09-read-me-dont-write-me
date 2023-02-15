@@ -41,17 +41,17 @@ function generateMarkdown(data) {
 
   ## Table of Contents
 
-  * [Installation Instructions](#-installation)
+  * [Installation Instructions](#installation)
 
-  * [Usage Information](#-usage)
+  * [Usage Information](#usage)
 
-  * [License](#-license)
+  * [License](#license)
 
-  * [Contributors](#-contributors)
+  * [Contributors](#contributors)
 
-  * [Test Information](#-tests)
+  * [Test Information](#tests)
 
-  * [Questions](#-questions)
+  * [Questions](#questions)
           
   ## Installation: 
   ${data.installation}

@@ -5,20 +5,22 @@
 
   ## Table of Contents
 
-  * [Installation Instructions](#-installation)
+  * [Installation Instructions](#installation)
 
-  * [Usage Information](#-usage)
+  * [Usage Information](#usage)
 
-  * [License](#-license)
+  * [License](#license)
 
-  * [Contributors](#-contributors)
+  * [Contributors](#contributors)
 
-  * [Test Information](#-tests)
+  * [Test Information](#tests)
 
-  * [Questions](#-questions)
+  * [Questions](#questions)
           
   ## Installation: 
   To install this app, simply pull the code from my repository on GitHub, and install npm (use: npm install). Then to initiate the questions, type: node indexjs
+  You can find the repository here: https://github.com/skyeflier/09-read-me-dont-write-me
+  You can find the screencast on how to use this application here: https://drive.google.com/file/d/1BtEU3-pwYvnYRohCV3X8KuHCOIFq3lw8/view
           
   ## Usage: 
   Use this project to generate a read me file. When you have completed answering the questions, a new read me file will be created, and you can copy that file to your new project. 

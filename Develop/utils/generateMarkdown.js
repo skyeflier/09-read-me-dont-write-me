@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in. If there is no license, return an empty string //LOOK UP HOW TO CREATE A LICENSE BADGE  // USE INQUIRER TO GIVE OPTIONS 
+// This is a function that returns a license badge based on which license is passed in. If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let markdownLicenseBadge = ""
   if (license === 'none') {
@@ -15,69 +15,65 @@ function renderLicenseBadge(license) {
   return `License Badge: ${markdownLicenseBadge}`
 };
 
-// TODO: Create a function that returns the license link. If there is no license, return an empty string
+// This is a function that returns the license link. If there is no license, return an empty string
 function renderLicenseLink(license) {
   let markdownLicenseLink = ""
   if (license === 'none') {
     return markdownLicenseLink;
   } else {
     if (license === 'MIT') {
-      renderLicenseLink = `[License: MIT](https://opensource.org/licenses/MIT)`
+      renderLicenseLink = `This application is covered by the MIT license. For more information on this license, click this link: https://opensource.org/licenses/MIT`
     } else if (license === 'GPLv3') {
-      renderLicenseLink = `[GPL v3](https://www.gnu.org/licenses/gpl-3.0)`
+      renderLicenseLink = `This application is covered by the GPLv3 license. For more information on this license, click this link: https://www.gnu.org/licenses/gpl-3.0`
     } else if (license === 'Apache') {
-      renderLicenseLink = `[Apache](https://opensource.org/licenses/Apache-2.0)`
+      renderLicenseLink = `This application is covered by the Apache license. For more information on this license, click this link: https://opensource.org/licenses/Apache-2.0`
     }
   }
   return `License Link: ${renderLicenseLink}`
 }
 
-// TODO: Create a function that returns the license section of README. If there is no license, return an empty string
-function renderLicenseSection(license) {
-  let licenseSection = "";
-  if (license === 'none') {
-    return "";
-  } else {
-    // HOW DO I ADD THE LICENSE SECTION??
-  }
-}
-
 // This generates the markdown for README
 function generateMarkdown(data) {
-  return `${data.title}
-          ${renderLicenseBadge(data.markdownLicense)}
+  return `# ${data.title} ${renderLicenseBadge(data.markdownLicense)}
           
           ## Description: 
           ${data.description}
   ## Table of Contents
-  [Title](##-${data.title})
-  [Description](##-description)
-  [Installation Instructions](##-installation)
-  [Usage Information](##-usage)
-  [License](##-license)
-  [Contributors](##-contributors)
-  [Test Information](##-tests)
-  [Questions](##-questions)
-          
-          ## Installation: 
-          ${data.installation}
-          
-          ## Usage: 
-          ${data.usage}
-          
-          ## Contributors: 
-          ${data.contributors}
+  * [Title](##-${data.title})
 
-          ## Tests: 
-          ${data.test}
+  * [Description](##-description)
 
-          ## License: 
-          ${renderLicenseSection(data.markdownLicense)}
-          ${renderLicenseLink(data.markdownLicense)}
+  * [Installation Instructions](##-installation)
+
+  * [Usage Information](##-usage)
+
+  * [License](##-license)
+
+  * [Contributors](##-contributors)
+
+  * [Test Information](##-tests)
+
+  * [Questions](##-questions)
+          
+  ## Installation: 
+  ${data.installation}
+          
+  ## Usage: 
+  ${data.usage}
+          
+  ## Contributors: 
+  ${data.contributors}
+
+  ## Tests: 
+  ${data.test}
+
+  ## License:
+  ${renderLicenseLink(data.markdownLicense)}
          
-          ## Questions
-          Find me on GitHub here: ${data.githubUsername}
-          Contact me via email here: ${data.emailAddress}
+  ## Questions:
+  Find me on GitHub here: https://github.com/${data.githubUsername}
+
+  Contact me via email here: ${data.emailAddress}
 
   `;
 }

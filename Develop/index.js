@@ -34,12 +34,12 @@ const questions = [{
 },
 {
     type: 'input',
-    message: 'Enter who contributed to your project',
+    message: 'Enter the contributors of your project',
     name: 'contributors',
 },
 {
     type: 'input',
-    message: ['Enter any tests for this project'],
+    message: ['Enter any test instructions for this project'],
     name: 'test',
 },
 {

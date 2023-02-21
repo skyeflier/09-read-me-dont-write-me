@@ -1,7 +1,7 @@
 # Read Me Don't Write Me 
           
   Description: 
-  This Read Me generator was created to streamline creading read me files for coding projects and ensure they have consistent, professional formatting. I learned how to use inquirer and work in nodejs. 
+  This Read Me generator was created to streamline creating read me files for coding projects and ensure they have consistent, professional formatting. I learned how to use inquirer and work in nodejs. 
 
   ## Table of Contents
 
